@@ -39,3 +39,6 @@ I used popular tree ensemble models, namely **Isolation Forest** and **Random Cu
 
 ## Model Evaluation
 
+![Histograms of Models](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/84b3aa0258e6820a762707b50ca21d405ab77980/hist_of_models.png)
+![ROC Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/84b3aa0258e6820a762707b50ca21d405ab77980/roc_curves.png)
+![PR Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/84b3aa0258e6820a762707b50ca21d405ab77980/pr_curves.png)
