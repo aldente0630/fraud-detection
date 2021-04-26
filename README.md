@@ -10,3 +10,5 @@ To preprocess data for modeling, I quickly explored proportions of missing value
 ![Proportions of Missing Values](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/b959ce754282ed28d2d43ed079d7d06c214d735e/prop_of_missing_values.png)
   
 Some categorical features have more than a few hundred categories, or even more than 10,000.
+
+![Cardinalities of Categorical Features](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/5eadffe29734da70371e84b06eb73706a1c7731d/card_of_cat_features.png)
