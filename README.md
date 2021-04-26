@@ -26,7 +26,7 @@ Finally I calculated the correlation coefficient matrix. While most of the featu
 ![Correlation Matrix](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/8d2e8f22179512119765ca5bd9cbdedefc2d990a/corr_matrix.png)
 
 ## Data Splitting & Preprocessing
-In the general case of unsupervised learning, it is not possible to evaluate the predictive performance, but since there are labels in this example, 20% of the total was splitted into the validation dataset. Ordinal Encoding and imputation were applied to categorical features, and imputation was applied after normalization to numeric features. To view the transformed dataset, the dimensions of the dataset was reduced using **t-SNE**. The manifold looks like a twisted band, and the fraudulent labels appear to exist outside the clusters.
+In the general case of unsupervised learning, it is not possible to evaluate the predictive performance, but since there are labels in this example, 20% of the total was splitted into the validation dataset. Ordinal Encoding and imputation were applied to categorical features, and imputation was applied after normalization to numeric features. To view the transformed validation dataset, the dimensions of the dataset was reduced using **t-SNE**. The manifold looks like a twisted band, and the fraudulent labels appear to exist outside the clusters. Therefore, it seems that pretty good accuracy can be achieved even with unsupervised learning.
   
 ![Scatter Plot of Manifold with t-SNE](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/84b3aa0258e6820a762707b50ca21d405ab77980/images/scatter_of_manifold.png)
 
@@ -38,7 +38,9 @@ I used popular tree ensemble models, namely **Isolation Forest** and **Random Cu
 * [Li, Z., Zhao, Y., Botta, N., Ionescu, C. and Hu, X. COPOD: Copula-Based Outlier Detection. IEEE International Conference on Data Mining (ICDM), 2020.](https://arxiv.org/pdf/2009.09463.pdf)
 
 ## Model Evaluation
-
+Anomaly scores output by the models have lognormal distributions with long tails as expected.
 ![Histograms of Models](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/03d4bf187332dec8baef687e1fdf4fcafd24466c/images/hist_of_models.png)
+  
 ![ROC Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/03d4bf187332dec8baef687e1fdf4fcafd24466c/images/roc_curves.png)
-![PR Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/03d4bf187332dec8baef687e1fdf4fcafd24466c/images/pr_curves.png)
+  
+![PR Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/08f4d46f7bfe34df957027e9527441cd92fb96f6/images/roc_curves2.png)
