@@ -1,6 +1,7 @@
 # IEEE Fraud Detection with Unsupervised Learning
-## Goal
+## Goals
 * The prediction performances and computation times of various **unsupervised learning anomaly detection** algorithms such as **Isolation Forest**, **COPOD**, and **Random Cut Forests**, are compared.
+* (Optional) `Altair` is applied for the purpose of drawing interactive plots during EDA.
   
 ## Requirement
 * The dataset can be downloaded from [this Kaggle competition](https://www.kaggle.com/c/ieee-fraud-detection/).
