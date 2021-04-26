@@ -1,5 +1,6 @@
 # fraud-detection-with-unsupervised-learning
 
+<div class="aside">
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,3 +36,4 @@
   </script>
 </body>
 </html>
+</div>
