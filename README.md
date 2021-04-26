@@ -1,6 +1,6 @@
 # IEEE Fraud Detection with Unsupervised Learning
 ## Goals
-* The prediction performances and computation times of various **unsupervised learning anomaly detection** algorithms such as **Isolation Forest**, **COPOD**, and **Random Cut Forests**, are compared.
+* The prediction performances and computation times of various **unsupervised learning anomaly detection** algorithms such as **Isolation Forest**, **COPOD**, and **Random Cut Forest**, are compared.
 * (Optional) `Altair` is applied for the purpose of drawing interactive plots during EDA.
   
 ## Requirement
@@ -31,7 +31,7 @@ In the general case of unsupervised learning, it is not possible to evaluate the
 ![Scatter Plot of Manifold with t-SNE](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/84b3aa0258e6820a762707b50ca21d405ab77980/images/scatter_of_manifold.png)
 
 ## Moding with Isolation Forest, COPOD and Random Cut Forests
-I used popular tree ensemble models, namely **Isolation Forest** and **Random Cut Forests**, and the latest algorithm **Copula-based Outlier Detection**(COPOD). For a detailed description of the algorithms, refer to the following links.
+I used popular tree ensemble models, namely **Isolation Forest** and **Random Cut Forest**, and the latest algorithm **Copula-based Outlier Detection**(COPOD). For a detailed description of the algorithms, refer to the following links.
 * [Liu, Fei Tony, Ting, Kai Ming and Zhou, Zhi-Hua. “Isolation forest.” Data Mining, 2008. ICDM’08. Eighth IEEE International Conference on.](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf?q=isolation-forest)
 * [Liu, Fei Tony, Ting, Kai Ming and Zhou, Zhi-Hua. “Isolation-based anomaly detection.” ACM Transactions on Knowledge Discovery from Data (TKDD) 6.1 (2012): 3.](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tkdd11.pdf)
 * [Sudipto Guha, Nina Mishra, Gourav Roy, and Okke Schrijvers. "Robust random cut forest based anomaly detection on streams." In International Conference on Machine Learning, pp. 2712-2721. 2016. ](http://proceedings.mlr.press/v48/guha16.pdf)
