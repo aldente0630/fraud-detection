@@ -17,4 +17,6 @@ In order to examine the distribution of numerical features, some of the features
 
 ![Histograms of Numeric Features](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/f3336064503ab632af395f9cf75208437963ab76/hist_of_num_features.png)  
   
-Finally I looked at the correlation coefficient matrix. While most of the features are not correlated, some have very high positive correlations.
+Finally I calculated the correlation coefficient matrix. While most of the features are not correlated, some have very high positive correlations.
+
+![Correlation Matrix](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/8d2e8f22179512119765ca5bd9cbdedefc2d990a/corr_matrix.png)
