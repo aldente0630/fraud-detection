@@ -30,3 +30,4 @@ In the general case of unsupervised learning, it is not possible to evaluate the
 ![Scatter Plot of Manifold with t-SNE](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/84b3aa0258e6820a762707b50ca21d405ab77980/images/scatter_of_manifold.png)
 
 ## Moding with Isolation Forest, COPOD and Random Cut Forests
+I used popular tree ensemble models, namely **Isolation Forest** and **Random Cut Forests**, and the latest algorithm **Copula-based Outlier Detection**(COPOD).
