@@ -12,3 +12,7 @@ To preprocess data for modeling, I quickly explored proportions of missing value
 Some categorical features have more than a few hundred categories, or even more than 10,000.
 
 ![Cardinalities of Categorical Features](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/5eadffe29734da70371e84b06eb73706a1c7731d/card_of_cat_features.png)
+  
+In order to examine the distribution of numerical features, some of the features with few missing values and adequately distributed were randomly selected. From the histograms, it can be seen that most of the variables have a long tail.
+
+![Histograms of Numeric Features](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/5eadffe29734da70371e84b06eb73706a1c7731d/hist_of_num_features.png)
