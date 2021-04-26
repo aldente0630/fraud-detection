@@ -1,4 +1,4 @@
-# IEEE Fraud Detection with Unsupervised Learning
+# IEEE-CIS Fraud Detection with Unsupervised Learning
 ## Goals
 * The prediction performances and computation times of various **unsupervised learning anomaly detection** algorithms such as **Isolation Forest**, **COPOD**, and **Random Cut Forest**, are compared.
 * (Optional) `Altair` is applied for the purpose of drawing interactive plots during EDA.
