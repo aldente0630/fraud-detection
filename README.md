@@ -20,3 +20,7 @@ In order to examine the distribution of numerical features, some of the features
 Finally I calculated the correlation coefficient matrix. While most of the features are not correlated, some have very high positive correlations.
 
 ![Correlation Matrix](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/8d2e8f22179512119765ca5bd9cbdedefc2d990a/corr_matrix.png)
+
+## Data Splitting & Preprocessing
+In the general case of unsupervised learning, it is not possible to evaluate the predictive performance, but since there are labels in this example, 20% of the total was divided into the validation dataset. Ordinal Encoding and imputation were applied to categorical features, and imputation was applied after normalization to numeric features. To view the transformed dataset, the dataset was visualized using t-SNE. The manifold looks like a twisted band, and the fraudulent labels appear to exist outside the clusters.
+![Scatter Plot of Manifold with t-SNE]()
