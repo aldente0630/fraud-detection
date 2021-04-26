@@ -40,7 +40,7 @@ I used popular tree ensemble models, namely **Isolation Forest** and **Random Cu
 Isolation Forest fitting used 12 cores as multi-threading, but COPOD was fitted with a single thread. Random Cut Forest was trained using AWS EC2 `ml.m4.xlarge` instance.
 
 ## Model Evaluation
-Anomaly scores output by the models have lognormal distributions with long tails as expected.
+Anomaly scores output by the models have log-normal distributions with long tails as expected.
   
 ![Histograms of Models](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/03d4bf187332dec8baef687e1fdf4fcafd24466c/images/hist_of_models.png)
   
@@ -49,3 +49,11 @@ COPOD is the highest for both AUROC and AUPRC, followed by Isolation Forest, fol
 ![ROC Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/08f4d46f7bfe34df957027e9527441cd92fb96f6/images/roc_curves2.png)
   
 ![PR Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/03d4bf187332dec8baef687e1fdf4fcafd24466c/images/pr_curves.png)
+  
+The results are summarized in a table as follows.
+  
+|Detector|AUROC|AUPRC|Training Time|Spec.|
+|:------:|:---:|:---:|:---:|:---:|
+|COPOD|77.55%|15.33%|5min 23s|MacBook Pro (16 CPUs, mem 32GB)|
+|Isolation Forest|76.33%|13.74%|4min 48s|MacBook Pro (16 CPUs, mem 32GB)|
+|Random Cut Forest|68.84%|7.96%|3min 10s|EC2 ml.m4.xlarge (2 CPUs, mem 16GB)|
