@@ -44,7 +44,7 @@ Anomaly scores output by the models have log-normal distributions with long tail
   
 ![Histograms of Models](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/03d4bf187332dec8baef687e1fdf4fcafd24466c/images/hist_of_models.png)
   
-COPOD is the highest for both AUROC and AUPRC, followed by Isolation Forest, followed by Random Cut Forest. 
+**COPOD is the highest for both AUROC and AUPRC, followed by Isolation Forest, followed by Random Cut Forest.**
   
 ![ROC Curves](https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/08f4d46f7bfe34df957027e9527441cd92fb96f6/images/roc_curves2.png)
   
