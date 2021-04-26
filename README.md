@@ -1,2 +1,4 @@
-# fraud-detection-with-unsupervised-learning
-{% include https://github.com/aldente0630/fraud-detection-with-unsupervised-learning/blob/04ffc2798c27bc4baf14f05b3854e7fa30636fbd/chart1.html %}
+# IEEE Fraud Detection with Unsupervised Learning
+## Requirement
+* The dataset can be downloaded from [this Kaggle competition](https://www.kaggle.com/c/ieee-fraud-detection/).
+* `Altair`, `vega-datasets`, `PyOD` and `scikit-learn` version 0.24 libraries are required. 
