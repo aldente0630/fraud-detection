@@ -1,14 +1,14 @@
 # IEEE-CIS Fraud Detection with Unsupervised Learning
-## Goals
+### Goals
 * The prediction performances and computation times of various **unsupervised learning anomaly detection** algorithms such as **Isolation Forest**, **COPOD**, and **Random Cut Forest**, are compared.
 * (Optional) `Altair` is applied for the purpose of drawing interactive plots during EDA.
   
-## Requirements
+### Requirements
 * The dataset can be downloaded from [this Kaggle competition](https://www.kaggle.com/c/ieee-fraud-detection/).
 * In addition to the [Anaconda](https://www.anaconda.com) libraries, you need to install `altair`, `vega_datasets`, `pyod` and `scikit-learn` version 0.24 or higher.
 * You also need to set up an AWS account and install `awscli` and `sagemaker-python-sdk`.
   
-## EDA
+## Exploratory Data Analysis
 To preprocess data for modeling, I quickly explored proportions of missing values, cardinalities of categorical features, distributions of numerical features, and a correlation coefficient matrix. For the efficiency of the calculation, I selected 100 features by random sampling and looked at the proportions of their missing values. I have found that most of the features have a fairly high percentage of missing values.
   
 ![Proportions of Missing Values](./img/fraud_detection_with_unsupervised_learning1.svg)
@@ -25,12 +25,14 @@ Finally I calculated the correlation coefficient matrix. While most of the featu
 
 ![Correlation Matrix](./img/fraud_detection_with_unsupervised_learning4.svg)
 
-## Data Splitting & Preprocessing
+## Data Splitting and Preprocessing
 In the general case of unsupervised learning, it is not possible to evaluate the predictive performance, but since there are labels in this example, 20% of the total was splitted into the validation dataset. Ordinal Encoding and imputation were applied to categorical features, and imputation was applied after normalization to numeric features. To view the transformed validation dataset, the dimensions of the dataset was reduced using **t-SNE**. The manifold looks like a twisted band, and the fraudulent labels appear to exist outside the clusters. Therefore, it seems that pretty good accuracy can be achieved even with unsupervised learning.
-  
+
+### Data Visualization with t-SNE  
 ![Scatter Plot of Manifold with t-SNE](./img/fraud_detection_with_unsupervised_learning5.svg)
 
-## Modeling with Isolation Forest, Random Cut Forest and COPOD
+## Model Training and Prediction
+### Fitting and Prediction with Isolation Forest, Random Cut Forest and COPOD
 I used popular tree ensemble models, namely **Isolation Forest** and **Random Cut Forest**, and the latest algorithm **Copula-based Outlier Detection**(COPOD). For a detailed description of the algorithms, refer to the following links.
 * [Liu, Fei Tony, Ting, Kai Ming and Zhou, Zhi-Hua. “Isolation forest.” Data Mining, 2008. ICDM’08. Eighth IEEE International Conference on.](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf?q=isolation-forest)
 * [Liu, Fei Tony, Ting, Kai Ming and Zhou, Zhi-Hua. “Isolation-based anomaly detection.” ACM Transactions on Knowledge Discovery from Data (TKDD) 6.1 (2012): 3.](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tkdd11.pdf)
@@ -59,5 +61,5 @@ The results are summarized in a table as follows.
 |Isolation Forest|76.33%|13.74%|5min 23s|MacBook Pro (16 CPUs, mem 32GB)|
 |Random Cut Forest|68.84%|7.96%|3min 10s|EC2 ml.m4.xlarge (2 CPUs, mem 16GB)|
 
-## Submission
+### Conclusion
 COPOD performance was the best in AUROC, the competition criterion, so I fitted the entire dataset with it and submitted the predictions. The final result is AUROC 77.26%, which is quite far from 94.59%, which is No. 1 in the private leaderboard, but the possibility as unsupervised learning could be found.
