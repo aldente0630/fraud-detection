@@ -3,10 +3,10 @@
 * The prediction performances and computation times of various **unsupervised learning anomaly detection** algorithms such as **Isolation Forest**, **COPOD**, and **Random Cut Forest**, are compared.
 * (Optional) `Altair` is applied for the purpose of drawing interactive plots during EDA.
   
-## Requirement
+## Requirements
 * The dataset can be downloaded from [this Kaggle competition](https://www.kaggle.com/c/ieee-fraud-detection/).
-* `Altair`, `vega-datasets`, `PyOD` and `scikit-learn` version 0.24 libraries are required. 
-* For some experiments, `Amazon SageMaker` and related SDKs are needed. This installation can be skipped.
+* In addition to the [Anaconda](https://www.anaconda.com) libraries, you need to install `altair`, `vega_datasets`, `pyod` and `scikit-learn` version 0.24 or higher.
+* You also need to set up an AWS account and install `awscli` and `sagemaker-python-sdk`.
   
 ## EDA
 To preprocess data for modeling, I quickly explored proportions of missing values, cardinalities of categorical features, distributions of numerical features, and a correlation coefficient matrix. For the efficiency of the calculation, I selected 100 features by random sampling and looked at the proportions of their missing values. I have found that most of the features have a fairly high percentage of missing values.
@@ -23,7 +23,7 @@ In order to examine the distribution of numerical features, some of the features
   
 Finally I calculated the correlation coefficient matrix. While most of the features are not correlated, some have very high positive correlations.
 
-![Correlation Matrix](./images/fraud_detection_with_unsupervised_learning4.svg)
+![Correlation Matrix](./img/fraud_detection_with_unsupervised_learning4.svg)
 
 ## Data Splitting & Preprocessing
 In the general case of unsupervised learning, it is not possible to evaluate the predictive performance, but since there are labels in this example, 20% of the total was splitted into the validation dataset. Ordinal Encoding and imputation were applied to categorical features, and imputation was applied after normalization to numeric features. To view the transformed validation dataset, the dimensions of the dataset was reduced using **t-SNE**. The manifold looks like a twisted band, and the fraudulent labels appear to exist outside the clusters. Therefore, it seems that pretty good accuracy can be achieved even with unsupervised learning.
