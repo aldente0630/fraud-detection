@@ -53,9 +53,9 @@ Anomaly scores output by the models have log-normal distributions with long tail
   
 The results are summarized in a table as follows.
   
-|Detector|AUROC|AUPRC|Training Time|Spec.|
+|Estimator|AUROC|AUPRC|Training Time|Spec.|
 |:------:|:---:|:---:|:---:|:---:|
-|COPOD|77.55%|15.33%|4min 48s|MacBook Pro (16 CPUs, mem 32GB)|
+|COPOD|77.55%|15.53%|4min 48s|MacBook Pro (16 CPUs, mem 32GB)|
 |Isolation Forest|76.33%|13.74%|5min 23s|MacBook Pro (16 CPUs, mem 32GB)|
 |Random Cut Forest|68.84%|7.96%|3min 10s|EC2 ml.m4.xlarge (2 CPUs, mem 16GB)|
 
