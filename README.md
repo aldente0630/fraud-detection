@@ -26,9 +26,11 @@ Finally I calculated the correlation coefficient matrix. While most of the featu
 ![Correlation Matrix](./img/fraud_detection_with_unsupervised_learning4.svg)
 
 ## Data Splitting and Preprocessing
-In the general case of unsupervised learning, it is not possible to evaluate the predictive performance, but since there are labels in this example, 20% of the total was splitted into the validation dataset. Ordinal Encoding and imputation were applied to categorical features, and imputation was applied after normalization to numeric features. To view the transformed validation dataset, the dimensions of the dataset was reduced using **t-SNE**. The manifold looks like a twisted band, and the fraudulent labels appear to exist outside the clusters. Therefore, it seems that pretty good accuracy can be achieved even with unsupervised learning.
-
-### Data Visualization with t-SNE  
+In the general case of unsupervised learning, it is not possible to evaluate the predictive performance, but since there are labels in this example, 20% of the total was splitted into the validation dataset. Ordinal Encoding and imputation were applied to categorical features, and imputation was applied after normalization to numeric features.
+  
+### Data Visualization with t-SNE 
+To view the transformed validation dataset, the dimensions of the dataset was reduced using **t-SNE**. The manifold looks like a twisted band, and the fraudulent labels appear to exist outside the clusters. Therefore, it seems that pretty good accuracy can be achieved even with unsupervised learning.
+  
 ![Scatter Plot of Manifold with t-SNE](./img/fraud_detection_with_unsupervised_learning5.svg)
 
 ## Model Training and Prediction
