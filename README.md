@@ -35,12 +35,13 @@ To view the transformed validation dataset, the dimensions of the dataset was re
 
 ## Model Training and Prediction
 ### Fitting and Prediction with Isolation Forest, Random Cut Forest and COPOD
-I used popular tree ensemble models, namely **Isolation Forest** and **Random Cut Forest**, and the latest algorithm **Copula-based Outlier Detection**(COPOD). For a detailed description of the algorithms, refer to the following links.
+I used popular tree ensemble models, namely **Isolation Forest** and **Random Cut Forest**, and the latest algorithm **Copula-based Outlier Detection**(COPOD). For detailed explanations and usages of the algorithms, please refer to the following link.
 * [Liu, Fei Tony, Ting, Kai Ming and Zhou, Zhi-Hua. “Isolation forest.” Data Mining, 2008. ICDM’08. Eighth IEEE International Conference on.](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/icdm08b.pdf?q=isolation-forest)
 * [Liu, Fei Tony, Ting, Kai Ming and Zhou, Zhi-Hua. “Isolation-based anomaly detection.” ACM Transactions on Knowledge Discovery from Data (TKDD) 6.1 (2012): 3.](https://cs.nju.edu.cn/zhouzh/zhouzh.files/publication/tkdd11.pdf)
 * [Sudipto Guha, Nina Mishra, Gourav Roy, and Okke Schrijvers. "Robust random cut forest based anomaly detection on streams." In International Conference on Machine Learning, pp. 2712-2721. 2016. ](http://proceedings.mlr.press/v48/guha16.pdf)
 * [Li, Z., Zhao, Y., Botta, N., Ionescu, C. and Hu, X. COPOD: Copula-Based Outlier Detection. IEEE International Conference on Data Mining (ICDM), 2020.](https://arxiv.org/pdf/2009.09463.pdf)
-* [Use the Built-in Amazon SageMaker Random Cut Forest Algorithm for Anomaly Detection](https://aws.amazon.com/ko/blogs/machine-learning/use-the-built-in-amazon-sagemaker-random-cut-forest-algorithm-for-anomaly-detection)
+* [Python Outlier Detection (PyOD)](https://pyod.readthedocs.io/en/latest)
+* [SageMaker Python SDK: Random Cut Forest](https://sagemaker.readthedocs.io/en/stable/algorithms/randomcutforest.html)
   
 Isolation Forest fitting used 12 cores as multi-threading, but COPOD was fitted with a single thread. Random Cut Forest was trained using AWS EC2 `ml.m4.xlarge` instance.
 
