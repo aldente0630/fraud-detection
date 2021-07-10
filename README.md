@@ -26,10 +26,10 @@ Finally, I calculated the correlation coefficient matrix. While most of the feat
 ![Correlation Matrix](./img/fraud_detection_with_unsupervised_learning4.svg)
 
 ## Data Splitting and Preprocessing
-In the general case of unsupervised learning, it is not possible to evaluate the predictive performance. However, since there are labels in this example, I split 20% of the total into the validation dataset. I preprocessed using ordinal encoding, missing value imputation, and *Helmert Encoding* for categorical features, and applied missing value imputation to numeric features. Then I normalized all the features.
+In the general case of unsupervised learning, it is not possible to evaluate the predictive performance. However, since there are labels in this example, I split 20% of the total into the validation dataset. I preprocessed using ordinal encoding, missing value imputation, and *[Helmert Encoding](http://psych.colorado.edu/~carey/Courses/PSYC5741/handouts/Coding%20Categorical%20Variables%202006-03-03.pdf)* for categorical features, and applied missing value imputation to numeric features. Then I normalized all the features.
   
 ### Data Visualization with t-SNE 
-To view the transformed validation dataset, I reduced the dimensions of the dataset using *t-SNE*. The manifold looks like a few clusters, and the fraudulent labels appear to exist outside the clusters. Therefore, it seems that pretty good accuracy can be achieved even with unsupervised learning.
+To view the transformed validation dataset, I reduced the dimensions of the dataset using *[t-SNE](https://www.jmlr.org/papers/volume9/vandermaaten08a/vandermaaten08a.pdf)*. The manifold looks like a few clusters, and the fraudulent labels appear to exist outside the clusters. Therefore, it seems that pretty good accuracy can be achieved even with unsupervised learning.
   
 ![Scatter Plot of Manifold with t-SNE](./img/fraud_detection_with_unsupervised_learning5.svg)
 
