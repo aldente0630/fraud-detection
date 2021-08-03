@@ -61,9 +61,9 @@ The results are summarized in a table as follows.
   
 |Estimator|AUROC|AUPRC|Training Time|Spec.|
 |:------:|:---:|:---:|:---:|:---:|
-|COPOD|77.55%|15.53%|5min 12s|MacBook Pro (16 CPUs, mem 32GB)|
-|Isolation Forest|76.33%|13.74%|6min 20s|MacBook Pro (16 CPUs, mem 32GB)|
-|Random Cut Forest|74.22%|12.71%|3min 38s|EC2 ml.m4.xlarge (2 CPUs, mem 16GB)|
+|COPOD|77.55%|15.53%|4min 54s|MacBook Pro (16 CPUs, mem 32GB)|
+|Isolation Forest|76.33%|13.74%|5min 49s|MacBook Pro (16 CPUs, mem 32GB)|
+|Random Cut Forest|74.22%|12.71%|3min 35s|EC2 ml.m4.xlarge (2 CPUs, mem 16GB)|
 
 ### Conclusion
 *COPOD* performance was the best in AUROC, the competition criterion, so I fitted the entire dataset with it and submitted the predictions. The final result is AUROC 77.26%, which is quite far from 94.59%, which is No. 1 in the private leaderboard, but the possibility as unsupervised learning could be found.
