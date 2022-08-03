@@ -5,7 +5,7 @@
   
 ### Requirements
 * The dataset can be downloaded from [this Kaggle competition](https://www.kaggle.com/c/ieee-fraud-detection).
-* In addition to the [Anaconda](https://www.anaconda.com) libraries, you need to install `altair`, `vega_datasets`, `category_encoders`, `pyod` and `scikit-learn` version 0.24 or higher.
+* In addition to the [Anaconda](https://www.anaconda.com) libraries, you need to install `altair`, `category_encoders`, `pyod` and `scikit-learn` version 0.24 or higher.
 * You also need to set up an AWS account and install `awscli` and `sagemaker-python-sdk`.
   
 ## Exploratory Data Analysis

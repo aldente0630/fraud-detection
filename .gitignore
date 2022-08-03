@@ -1,5 +1,4 @@
 *DS_Store
 *idea
 *ipynb_checkpoints
-*.csv
-*.pkl
+models/
