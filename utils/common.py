@@ -6,21 +6,6 @@ import numpy as np
 import pandas as pd
 
 
-def dump_pickle(file_path, obj):
-    with open(file_path, "wb") as file:
-        pickle.dump(obj, file)
-
-
-def load_pickle(file_path):
-    with open(file_path, "rb") as file:
-        obj = pickle.load(file)
-    return obj
-
-
-def get_cpu_count(cpu_usage):
-    return round(cpu_usage * multiprocessing.cpu_count())
-
-
 def _cast_data_type(series):
     column_type = series.dtype
     if column_type != np.object:
@@ -51,20 +36,6 @@ def _cast_data_type(series):
     return series
 
 
-def reduce_mem_usage(df):
-    mem_usage = df.memory_usage().sum() / 1024 ** 2
-    print(f"Memory usage of dataframe is {mem_usage:0.2f} MB.")
-    df = df.apply(_cast_data_type)
-    opt_mem_usage = df.memory_usage().sum() / 1024 ** 2
-    print(f"Memory usage after optimization is {opt_mem_usage:0.2f} MB.")
-    print(f"Decreased by {(100 * (mem_usage - opt_mem_usage) / mem_usage):0.2f}%.")
-    return df
-
-
-def str_to_int(x):
-    return x if pd.isnull(x) else str(int(x))
-
-
 def check_bucket_permission(bucket):
     permission = False
     try:
@@ -84,3 +55,32 @@ def check_bucket_permission(bucket):
     else:
         permission = True
     return permission
+
+
+def dump_pickle(file_path, obj):
+    with open(file_path, "wb") as file:
+        pickle.dump(obj, file)
+
+
+def get_cpu_count(cpu_usage):
+    return round(cpu_usage * multiprocessing.cpu_count())
+
+
+def load_pickle(file_path):
+    with open(file_path, "rb") as file:
+        obj = pickle.load(file)
+    return obj
+
+
+def reduce_mem_usage(df):
+    mem_usage = df.memory_usage().sum() / 1024 ** 2
+    print(f"Memory usage of dataframe is {mem_usage:0.2f} MB.")
+    df = df.apply(_cast_data_type)
+    opt_mem_usage = df.memory_usage().sum() / 1024 ** 2
+    print(f"Memory usage after optimization is {opt_mem_usage:0.2f} MB.")
+    print(f"Decreased by {(100 * (mem_usage - opt_mem_usage) / mem_usage):0.2f}%.")
+    return df
+
+
+def str_to_int(x):
+    return x if pd.isnull(x) else str(int(x))
