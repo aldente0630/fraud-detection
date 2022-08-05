@@ -1,3 +1,6 @@
 altair==4.2.0
+awscli==1.22.87
+black==19.10b0
 category_encoders==2.5.0
 pyod==1.0.4
+sagemaker-python-sdk==2.102.0
